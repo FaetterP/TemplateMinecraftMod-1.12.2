@@ -2,6 +2,7 @@ package FaetterP.examplemod.common.item;
 
 import FaetterP.examplemod.client.lib.LibResources;
 import FaetterP.examplemod.client.render.IModelRegister;
+import FaetterP.examplemod.common.core.ExamplemodCreativeTab;
 import FaetterP.examplemod.common.lib.LibMisc;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -19,6 +20,7 @@ public class ItemMod extends Item implements IModelRegister {
     public ItemMod(String name) {
         setRegistryName(new ResourceLocation(LibMisc.MOD_ID, name));
         setUnlocalizedName(name);
+        setCreativeTab(ExamplemodCreativeTab.INSTANCE);
     }
 
     @Nonnull
