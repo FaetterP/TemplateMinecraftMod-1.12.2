@@ -123,3 +123,10 @@ idea {
         inheritOutputDirs = false
     }
 }
+
+task prepareAssets(type: Copy) {
+    group = 'build'
+    from project.file('src/main/resources')
+    into project.file('build/classes/java/main')
+}
+project.classes.dependsOn(prepareAssets)

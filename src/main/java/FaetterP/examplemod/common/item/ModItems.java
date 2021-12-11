@@ -11,11 +11,13 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class ModItems {
 
     public static final Item clip = new ItemClip();
+    public static final Item pestleAndMortar = new ItemPestleAndMortar();
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> evt) {
         IForgeRegistry<Item> r = evt.getRegistry();
 
         r.register(clip);
+        r.register(pestleAndMortar);
     }
 }
