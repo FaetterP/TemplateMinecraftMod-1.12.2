@@ -115,3 +115,11 @@ publishing {
         }
     }
 }
+
+apply plugin: 'idea'
+
+idea {
+    module {
+        inheritOutputDirs = false
+    }
+}
